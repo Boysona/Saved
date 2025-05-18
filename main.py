@@ -116,14 +116,14 @@ def check_subscription(user_id):
 def send_subscription_message(chat_id):
     markup = telebot.types.InlineKeyboardMarkup()
     markup.add(
-        telebot.types.InlineKeyboardButton("Join Channel", url=f"https://t.me/{REQUIRED_CHANNEL[1:]}")
+        telebot.types.InlineKeyboardButton(" Click here to join the channel", url=f"https://t.me/{REQUIRED_CHANNEL[1:]}")
     )
     bot.send_message(
         chat_id,
         """🔓 Unlock everything — for FREE!
 💸 No fees, no limits. Ever.
-✨ Join @mediatranscriber
-🤖 Then come back and enjoy unlimited access to the bot""",
+✨ Just join the channel below
+🤖 Then come back and enjoy unlimited access to the bot!""",
         reply_markup=markup
     )
 
